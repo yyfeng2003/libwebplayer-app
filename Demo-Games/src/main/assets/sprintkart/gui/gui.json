@@ -1,0 +1,210 @@
+{
+	"debug": false,
+
+	"delay": 100,
+
+	"gameKeys": {
+	},
+
+    "layers": {
+		"menu": {
+            "type": "ui",
+			"root": true,
+            "buttons": [
+				{
+					"name": "next",
+					"x": 620,
+					"y": 340,
+					"isDefault": true
+				}
+			]
+        },
+
+		"map": {
+            "type": "ui",
+            "buttons": [
+				{
+					"name": "L1",
+					"x": 0.077,
+					"y": 0.332,
+					"round": ["back", "L2", "L2", "back"]
+				},
+				{
+					"name": "L2",
+					"x": 0.146,
+					"y": 0.628,
+					"round": ["L1", "L3", "L3", "L1"]
+				},
+				{
+					"name": "L3",
+					"x": 0.278,
+					"y": 0.346,
+					"round": ["L2", "L4", "L4", "L2"]
+				},
+				{
+					"name": "L4",
+					"x": 0.498,
+					"y": 0.264,
+					"round": ["L3", "L5", "L5", "L3"]
+				},
+				{
+					"name": "L5",
+					"x": 0.376,
+					"y": 0.678,
+					"round": ["L4", "L6", "L6", "L4"]
+				},
+				{
+					"name": "L6",
+					"x": 0.583,
+					"y": 0.764,
+					"round": ["L5", "L7", "L7", "L5"]
+				},
+				{
+					"name": "L7",
+					"x": 0.760,
+					"y": 0.551,
+					"round": ["L6", "L8", "L8", "L6"]
+				},
+				{
+					"name": "L8",
+					"x": 0.725,
+					"y": 0.128,
+					"round": ["L7", "L9", "L9", "L7"]
+				},
+				{
+					"name": "L9",
+					"x": 0.927,
+					"y": 0.525,
+					"round": ["L8", "next", "next", "L8"]
+				},
+				{
+					"name": "back",
+					"x": 61,
+					"y": 359,
+					"round": ["L1", "reset", "", "next"],
+					"bindKey": "BACK"
+				},
+				{
+					"name": "reset",
+					"x": 165,
+					"y": 359,
+					"round": ["", "next", "", "back"]
+				},
+				{
+					"name": "next",
+					"x": 620,
+					"y": 340,
+					"round": ["L9", "back", "", "reset"],
+					"isDefault": true
+				}
+			]
+        },
+
+		"pause": {
+            "type": "ui",
+            "buttons": [
+				{
+					"name": "back",
+					"x": 0.50,
+					"y": 0.813,
+					"bindKey": "BACK"
+				},
+				{
+					"name": "resume",
+					"x": 0.5,
+					"y": 0.5,
+					"target": "play",
+					"isDefault": true
+				}
+			]
+        },
+
+		"complete": {
+            "type": "ui",
+            "buttons": [
+				{
+					"name": "back",
+					"x": 98,
+					"y": 359,
+					"bindKey": "BACK"
+				},
+				{
+					"name": "next",
+					"x": 620,
+					"y": 340,
+					"isDefault": true
+				}
+			]
+        },
+
+		"upgrade": {
+            "type": "ui",
+            "buttons": [
+				{
+					"name": "back",
+					"x": 98,
+					"y": 359,
+					"bindKey": "BACK",
+					"round": ["item1", "next", "item1", "next"]
+				},
+				{
+					"name": "item1",
+					"x": 141,
+					"y": 248,
+					"round": ["item2", "item2", "back", "item4"]
+				},
+				{
+					"name": "item2",
+					"x": 311,
+					"y": 178,
+					"round": ["item3", "item3", "item1", "item1"]
+				},
+				{
+					"name": "item3",
+					"x": 481, 
+					"y": 248,
+					"round": ["item4", "item4", "item2", "item2"]
+				},
+				{
+					"name": "item4",
+					"x": 651, 
+					"y": 178,
+					"round": ["next", "item1", "next", "item3"]
+				},
+				{
+					"name": "next",
+					"x": 620,
+					"y": 340,
+					"isDefault": true,
+					"round": ["item4", "back", "item4", "back"]
+				}
+			]
+        },
+
+        "play": {
+            "type": "game",
+            "buttons": [
+				{
+					"name": "left",
+					"x": 0.33,
+					"y": 0.80,
+					"bindKey": "LEFT"
+				},
+				{
+					"name": "right",
+					"x": 0.66,
+					"y": 0.80,
+					"bindKey": "RIGHT"
+				},
+				{
+					"name": "pause",
+					"x": 0.894,
+					"y": 0.038,
+					"target": "pause",
+					"bindKey": "BACK"
+				}
+			]
+        }
+ 
+    }
+}

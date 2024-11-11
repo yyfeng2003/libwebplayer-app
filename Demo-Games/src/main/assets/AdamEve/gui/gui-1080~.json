@@ -1,0 +1,208 @@
+{
+	"debug": false,
+
+	"delay": 100,
+
+	"gameKeys": {
+
+	},
+
+	"vscale": 1,
+
+	"layers": {
+		"EntityHomeController": {
+			"type": "ui",
+			"root": true,
+			"buttons": [
+				{
+					"name": "play",
+					"x": 0.568,
+					"y": 0.694,
+					"isDefault": true
+				},
+				{
+					"name": "shop",
+					"x": 0.514, 
+					"y": 0.874
+				},
+				{
+					"name": "settings",
+					"x": 0.586,
+					"y": 0.874
+				},
+				{
+					"name": "help",
+					"x": 0.441,
+					"y": 0.874
+				}
+			]
+		},
+
+		"Ready": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "play",
+					"x": 0.555,
+					"y": 0.472
+				}
+			]
+		},
+
+		"Settings": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "music0",
+					"x": 0.410, 
+					"y": 0.415
+				},
+				{
+					"name": "music1",
+					"x": 0.625, 
+					"y": 0.415
+				},
+				{
+					"name": "effect0",
+					"x": 0.410,
+					"y": 0.531
+				},
+				{
+					"name": "effect1",
+					"x": 0.625,
+					"y": 0.531
+				},
+				{
+					"name": "back",
+					"x": 0.509, 
+					"y": 0.744,
+					"isDefault": true,
+					"bindKey": "BACK"
+				}
+			]
+		},
+
+		"Pause": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "music0",
+					"x": 0.410, 
+					"y": 0.415
+				},
+				{
+					"name": "music1",
+					"x": 0.625, 
+					"y": 0.415
+				},
+				{
+					"name": "effect0",
+					"x": 0.410,
+					"y": 0.531
+				},
+				{
+					"name": "effect1",
+					"x": 0.625,
+					"y": 0.531
+				},
+				{
+					"name": "home",
+					"x": 0.370,
+					"y": 0.733,
+					"bindKey": "BACK"
+				},
+				{
+					"name": "resume",
+					"x": 0.559, 
+					"y": 0.733,
+					"isDefault": true
+				},
+				{
+					"name": "restart",
+					"x": 0.657,
+					"y": 0.733
+				}
+			]
+		},
+
+		"Shop": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "prev",
+					"x": 0.222, 
+					"y": 0.524
+				},
+				{
+					"name": "next",
+					"x": 0.425,
+					"y": 0.524,
+					"isDefault": true
+				},
+				{
+					"name": "select",
+					"x": 0.361, 
+					"y": 0.754,
+					"hidden": true
+				},
+				{
+					"name": "buy1",
+					"x": 0.754, 
+					"y": 0.502
+				},
+				{
+					"name": "buy2",
+					"x": 0.754,
+					"y": 0.781
+				},
+				{
+					"name": "home",
+					"x": 0.509, 
+					"y": 0.919,
+					"bindKey": "BACK"
+				}
+			]
+		},
+
+		"EntityGameController": {
+			"type": "game",
+			"buttons": [
+				{
+					"name": "jump",
+					"x": 0.8,
+					"y": 0.8,
+					"bindKey": "ENTER"
+				},
+				{
+					"name": "pause",
+					"x": 0.961, 
+					"y": 0.933,
+					"bindKey": "BACK"
+				}
+			]
+		},
+
+		"GameOver": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "shop",
+					"x": 0.409,
+					"y": 0.719
+				},
+				{
+					"name": "home",
+					"x": 0.514,
+					"y": 0.719,
+					"bindKey": "BACK"
+				},
+				{
+					"name": "replay",
+					"x": 0.618, 
+					"y": 0.719,
+					"isDefault": true
+				}
+			]
+		}
+	}
+}

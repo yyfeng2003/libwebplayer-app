@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="keywords" content="tank,html5,canvas">
+	<title>Super Tank</title>
+
+
+	<style type="text/css">
+	
+	body,div,p,canvas{
+		margin:0;
+		padding:0
+	}
+	
+	body {
+		background-color:#333;
+		color:#ff9966;
+	}
+	
+	#game{
+		background-color:#000;
+	}
+	
+	#assets{
+		display:none;
+	}
+	
+	</style>
+	
+</head>
+
+
+<body>
+	<div>
+		<canvas id="render" width="512" height="448"></canvas> 
+		<canvas id="wall" width="512" height="448"></canvas> 
+		<canvas id="main" width="512" height="448"></canvas>
+		<canvas id="grass" width="512" height="448"></canvas>	
+		<canvas id="upp" width="512" height="448"></canvas> 
+		<canvas id="stage" width="512" height="448"></canvas> 
+	</div>
+
+	<div id="assets">
+		<img id="menu"/>
+		<img id="tankAll"/>
+		
+		<audio id="attack"/>
+		<audio id="bomb0"/>
+		<audio id="bomb1"/>
+		<audio id="food"/>
+		<audio id="stageStart"/>
+		<audio id="shootOver"/>
+	</div>
+
+	/*-------- adapt to WebPlayer --------*/
+	<script>
+		(function() {
+			var canvas = document.getElementsByTagName("canvas")[0];
+			window.screencanvas = canvas;
+		})();
+	</script>
+	/*-------- adapt to WebPlayer --------*/
+
+	<script type="text/javascript" src="dist/app.js"></script>
+	<script type="text/javascript" src="gui/gui.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

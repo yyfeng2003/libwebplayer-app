@@ -1,0 +1,27 @@
+{
+	"debug": false,
+
+	"delay": 100,
+
+    "layers": {
+		"menu": {
+            "type": "ui",
+			"root": true,
+            "buttons": [
+				{
+					"name": "click",
+					"x": 0,
+					"y": 0
+				}
+			]
+        },
+
+        "game": {
+            "type": "game",
+            "buttons": [
+				
+			]
+        }
+
+    }
+}

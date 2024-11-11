@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AdamEve</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="generator" content="Construct 3">
+
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+	<link rel="icon" type="image/png" href="icons/icon-512.png">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="fb-root"></div>
+
+	<script>
+
+		window.C3_IsSupported = true;
+		
+		if (!window.AudioContext) 
+		{
+			window.AudioParam  = class {
+				constructor() {
+					this.value = 0;
+				}
+				cancelScheduledValues() { }
+				setValueAtTime() { }
+				linearRampToValueAtTime() { }
+			}
+			
+			window.AudioBuffer = class {
+			}
+			
+			window.AudioBufferSourceNode  = class {
+				constructor() {
+				}
+				connect() { }
+				disconnect() { }
+				start() { }
+			}
+			
+			MediaElementAudioSourceNode = class {
+				connect() { }
+				disconnect() { }
+			}
+			
+			window.GainNode  = class {
+				constructor() {
+					this.gain = new AudioParam();
+				}
+				connect() { }
+				disconnect() { }
+			}
+			
+			window.AudioListener  = class {
+				setPosition() { }
+				setOrientation() { }
+			}
+			
+			window.AudioContext = class {
+			
+				constructor(options) {
+					this.sampleRate = 44100;
+					this.currentTime = 0;
+					this.state = "";
+					this.listener = new AudioListener();
+				}
+				
+				createBuffer() {
+					return new AudioBuffer();
+				}
+				
+				createBufferSource() {
+					return new AudioBufferSourceNode();
+				}
+				
+				createGain() {
+					return new GainNode();
+				}
+				
+				createMediaElementSource() {
+					return new MediaElementAudioSourceNode();
+				}
+				
+				resume() { }
+			}
+		}
+		
+		// for desktop
+		window.loadJson = window.loadJson || function(url) {
+			try {
+				var request = new XMLHttpRequest();
+				request.open("GET", url, false);
+				request.send(null);
+				return JSON.parse(request.responseText);
+			}
+			catch(e) {}
+			return null;
+		}
+		
+		if (!window.Worker) {
+			window.Worker = function(scriptURL) {
+				console.log("new Worker: " + scriptURL.href);
+
+				let channel = new MessageChannel();
+
+				let workerScript = document.createElement('script');
+				workerScript.onload = function() {
+					//workerScript.contentWindow.postMessage(channel.port2, '*', [channel.port2]);
+				};
+				workerScript.src = scriptURL.href;
+				document.body.appendChild(workerScript);
+
+				this.port = channel.port1;
+			}
+
+			window.Worker.prototype.postMessage = function(message) {
+				this.port.postMessage(message);
+			}
+		}
+
+		if (!window.MessageChannel) {
+			window.MessageChannel = function() {
+				this.port1 = {
+					onmessage: null,
+					postMessage: (message) => {
+						if (this.port2.onmessage) {
+							this.port2.onmessage({data: message});
+						}
+					}
+				};
+				this.port2 = {
+					onmessage: null,
+					postMessage: (message) => {
+						if (this.port1.onmessage) {
+							this.port1.onmessage({data: message});
+						}
+					}
+				};
+			}
+		}
+
+	</script>
+	
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>

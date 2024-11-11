@@ -1,0 +1,1 @@
+from cocos2d-x-lite-external-master libtiff-4.0.6

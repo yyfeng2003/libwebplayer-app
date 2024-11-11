@@ -1,0 +1,1 @@
+from cocos2d-x-lite-external-master libjpeg-9.0

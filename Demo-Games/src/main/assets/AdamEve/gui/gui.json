@@ -1,0 +1,291 @@
+{
+	"debug": false,
+
+	"delay": 100,
+
+	"gameKeys": {
+		
+	},
+
+	"vscale": 1,
+
+	"layers": {
+		"HomeScreen": {
+			"type": "ui",
+			"root": true,
+			"buttons": [
+				{
+					"name": "play",
+					"x": 0.511, "y": 0.843,
+					"isDefault": true
+				},
+				{
+					"name": "mute",
+					"x": 0.880, "y": 0.080
+				}
+			]
+		},
+
+		"ChooseTeamDialog": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "mute",
+					"x": 0.827, "y": 0.078
+				},
+				{
+					"name": "exit",
+					"x": 0.882, "y": 0.078
+				},
+				{
+					"name": "c1",
+					"x": 0.351, "y": 0.480
+				},
+				{
+					"name": "c2",
+					"x": 0.424, "y": 0.620,
+					"isDefault": true
+				},
+				{
+					"name": "c3",
+					"x": 0.498, "y": 0.480
+				},
+				{
+					"name": "c4",
+					"x": 0.573, "y": 0.620
+				},
+				{
+					"name": "c5",
+					"x": 0.649, "y": 0.480
+				}
+			]
+		},
+
+		"ChooseColorDialog2": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "mute",
+					"x": 0.827, "y": 0.078
+				},
+				{
+					"name": "exit",
+					"x": 0.882, "y": 0.078
+				},
+				{
+					"name": "c1",
+					"x": 0.464, "y": 0.548,
+					"isDefault": true
+				},
+				{
+					"name": "c2",
+					"x": 0.533, "y": 0.548
+				}
+			]
+		},
+
+		"ChooseColorDialog3": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "mute",
+					"x": 0.827, "y": 0.078
+				},
+				{
+					"name": "exit",
+					"x": 0.882, "y": 0.078
+				},
+				{
+					"name": "c1",
+					"x": 0.428, "y": 0.550,
+					"isDefault": true
+				},
+				{
+					"name": "c2",
+					"x": 0.498, "y": 0.550
+				},
+				{
+					"name": "c3",
+					"x": 0.568, "y": 0.550
+				}
+			]
+		},
+
+		"ChooseColorDialog4": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "mute",
+					"x": 0.827, "y": 0.078
+				},
+				{
+					"name": "exit",
+					"x": 0.882, "y": 0.078
+				},
+				{
+					"name": "c1",
+					"x": 0.392, "y": 0.544,
+					"isDefault": true
+				},
+				{
+					"name": "c2",
+					"x": 0.464, "y": 0.544
+				},
+				{
+					"name": "c3",
+					"x": 0.532, "y": 0.544
+				},
+				{
+					"name": "c4",
+					"x": 0.602, "y": 0.544
+				}
+			]
+		},
+
+		"ChooseColorDialog5": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "mute",
+					"x": 0.827, "y": 0.078
+				},
+				{
+					"name": "exit",
+					"x": 0.882, "y": 0.078
+				},
+				{
+					"name": "c1",
+					"x": 0.356, "y": 0.550,
+					"isDefault": true
+				},
+				{
+					"name": "c2",
+					"x": 0.428, "y": 0.550
+				},
+				{
+					"name": "c3",
+					"x": 0.500, "y": 0.550
+				},
+				{
+					"name": "c4",
+					"x": 0.572, "y": 0.550
+				},
+				{
+					"name": "c5",
+					"x": 0.644, "y": 0.550
+				}
+			]
+		},
+
+		"ChooseColorDialog6": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "mute",
+					"x": 0.827, "y": 0.078
+				},
+				{
+					"name": "exit",
+					"x": 0.882, "y": 0.078
+				},
+				{
+					"name": "c1",
+					"x": 0.323, "y": 0.550,
+					"isDefault": true
+				},
+				{
+					"name": "c2",
+					"x": 0.395, "y": 0.550
+				},
+				{
+					"name": "c3",
+					"x": 0.467, "y": 0.550
+				},
+				{
+					"name": "c4",
+					"x": 0.539, "y": 0.550
+				},
+				{
+					"name": "c5",
+					"x": 0.611, "y": 0.550
+				},
+				{
+					"name": "c6",
+					"x": 0.683, "y": 0.550
+				}
+			]
+		},
+
+		"HelpDialog": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "prev",
+					"x": 0.237, "y": 0.491,
+					"round": [null, "next", null, null]
+				},
+				{
+					"name": "next",
+					"x": 0.756, "y": 0.491,
+					"round": [null, null, null, "prev"]
+				},
+				{
+					"name": "skip",
+					"x": 0.500, "y": 0.791,
+					"isDefault": true
+				}
+			]
+		},
+
+
+		"PauseDialog": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "resume",
+					"x": 0.427, "y": 0.619
+				},
+				{
+					"name": "exit",
+					"x": 0.577, "y": 0.619,
+					"isDefault": true
+				}
+			]
+		},
+
+		"GameScreen": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "mute",
+					"x": 0.827, "y": 0.078
+				},
+				{
+					"name": "exit",
+					"x": 0.882, "y": 0.078,
+					"bindKey": "BACK"
+				},
+				{
+					"name": "dice",
+					"x": 0.843, "y": 0.841,
+					"isDefault": true
+				}
+			]
+		},
+
+		"GameOverDialog": {
+			"type": "ui",
+			"buttons": [
+				{
+					"name": "home",
+					"x": 0.390, "y": 0.626
+				},
+				{
+					"name": "restart",
+					"x": 0.610, "y": 0.626
+				}
+			]
+		}
+
+	}
+}

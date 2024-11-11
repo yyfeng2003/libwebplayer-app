@@ -1,0 +1,8 @@
+{
+   "packageUrl": 'http://rs.52jiami.com.cn/ssmj/regeng/android/test',
+   "remoteManifestUrl": 'http://rs.52jiami.com.cn/ssmj/regeng/android/test/project.manifest',
+   "remoteVersionUrl": 'http://rs.52jiami.com.cn/ssmj/regeng/android/test/version.manifest',
+   "version": '100001',
+   "assets": {},
+   "searchPaths": []
+}
