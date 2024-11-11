@@ -20,11 +20,15 @@ Supported Android devices include smartphones, televisions, set-top boxes, etc.,
 - put the libwebplayer-release.aar file in libs directory under your project
   
 - put the dependencies code into your module build.gradle file:
+  <br/>
+  ```
   dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
   }
   
 - create your GameActivity extends from WebPlayerActivity:
+  <br/>
+  ```
   public class GameActivity extends WebPlayerActivity {
       @Override
       public void onRenderReady() {
@@ -34,22 +38,20 @@ Supported Android devices include smartphones, televisions, set-top boxes, etc.,
   }
   
 - adapt to WebPlayer in the index.html
-  <body>
+  ```
+   <body>
     ...
-    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
-    /*-------- adapt to WebPlayer --------*/
+    <canvas id="GameCanvas"></canvas>
+    
     <script>
     (function() {
         var canvas = document.getElementById('GameCanvas');
         window.screencanvas = canvas;
     })()
     </script>
-    /*-------- adapt to WebPlayer --------*/
     ...
   </body>
-
-  That's all
-
+   
 4. Additional
 - Due to the weblayer library still being optimized and upgraded, the source code is not yet fully open.
 - You can try Demo-Games-release.apk under Demo-Games\build\outputs\apk\release directory. There are four demo games in it.
