@@ -1,5 +1,5 @@
 1.Overview
-The libwebplayer is a light-weight and high-performance runtime library for running HTML5 game on Android device. 
+- The libwebplayer is a light-weight and high-performance runtime library for running HTML5 game on Android device. 
 Supported Android devices include smartphones, televisions, set-top boxes, etc., and supported Android systems include Android 4.4 to the latest version.
 
 2.Features
