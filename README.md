@@ -56,7 +56,7 @@ Supported Android devices include smartphones, televisions, set-top boxes, etc.,
 - Due to the weblayer library still being optimized and upgraded, the source code is not yet fully open.
 - You can try Demo-Games-release.apk under Demo-Games\build\outputs\apk\release directory. There are four demo games in it.
 - The libwebplayer has been applied in 100+ HTML5 games.
-- The HTML5 game codes in the demo project is sourced from the internet and should not be used for commercial purposes.
+- The HTML5 game codes in the demo project are sourced from the internet and should not be used for commercial purposes.
 - Reference projects: ejecta and some webgl projects
 - Please email to yyfeng2003@foxmail.com if you are interested in it and need any help.
   
