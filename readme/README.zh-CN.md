@@ -10,6 +10,7 @@ libwebplayer是一个轻量级、高性能的运行时库，用于在Android设�
 <h2>2.特性</h2>
 
 - 可替代Android Webview运行HTML5游戏，但性能比Webview高出约2~3倍
+- 运行时的库文件大小约为12M字节
 - 主要用C++语言开发而成
 - 使用了OpenGLES、OpenSLES和Android V8库
 - 兼容HTML5规范
