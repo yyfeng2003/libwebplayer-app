@@ -74,6 +74,6 @@ libwebplayer是一个轻量级、高性能的运行时库，用于在Android设�
 - libwebplayer已应用于100多个HTML5游戏。
 - 演示项目Demo Games中的HTML5游戏代码来自互联网，请不要应用于商业目的。
 - 参考项目: ejecta
-- 请发送电子邮件至yyfeng2003@foxmail.com，如果您对此项目感兴趣并需要任何帮助。
+
   
 
