@@ -56,11 +56,12 @@ Supported Android devices include smartphones, televisions, games console, video
   ```
    <body>
     ...
-    <canvas id="GameCanvas"></canvas>
+    <canvas id="MyGameCanvas"></canvas>
+    ...
     
     <script>
     (function() {
-        var canvas = document.getElementById('GameCanvas');
+        var canvas = document.getElementById('MyGameCanvas');
         window.screencanvas = canvas;
     })()
     </script>
