@@ -1,7 +1,7 @@
 <h2>README.md</h2>
 
-- <a href="README.md">English</a>
-- <a href="readme/README.zh-CN.md">简体中文</a>
+- <a href="/README.md">English</a>
+- <a href="/readme/README.zh-CN.md">简体中文</a>
 
 <h2>1.概述</h2>
 
