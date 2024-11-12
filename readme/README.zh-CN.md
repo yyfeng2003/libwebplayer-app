@@ -69,7 +69,7 @@ libwebplayer是一个轻量级、高性能的运行时库，用于在Android设�
   
 <h2>4. 补充</h2> 
 
-- 由于weblayer库仍在优化和升级中，源代码尚未完全开放。
+- 由于WebPlayer运行库仍在优化和升级中，源代码尚未完全开放。
 - 您可以在Demo Games 的\build\outputs\apk\release目录中找到Demo-Games-release.apk，在Android设备或模拟器上安装运行它，里面有四个HTML5演示游戏。
 - libwebplayer已应用于100多个HTML5游戏。
 - 演示项目Demo Games中的HTML5游戏代码来自互联网，请不要应用于商业目的。
