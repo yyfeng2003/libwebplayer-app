@@ -17,7 +17,7 @@ libwebplayer是一个轻量级、高性能的运行时库，用于在Android设�
 - 支持javascript ES6规范
 - 支持安卓4.4+系统
 - 支持armeabi-v7a和arm64-v8a
-- 支持触摸、键盘和游戏手柄的交互式操作
+- 支持触摸、键盘、遥控器和游戏手柄的交互式操作
 - 支持javascript和原生java之间的代码交互
 - 支持websocket网络通讯
 - 支持.html/.js/.json/.jpg/.png/.mp3/.ttf等媒体类型
