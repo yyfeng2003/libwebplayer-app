@@ -55,11 +55,12 @@ libwebplayer是一个轻量级、高性能的运行时库，用于在Android设�
   ```
    <body>
     ...
-    <canvas id="GameCanvas"></canvas>
+    <canvas id="MyGameCanvas"></canvas>
+    ...
     
     <script>
     (function() {
-        var canvas = document.getElementById('GameCanvas');
+        var canvas = document.getElementById('MyGameCanvas');
         window.screencanvas = canvas;
     })()
     </script>
