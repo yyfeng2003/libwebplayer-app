@@ -11,6 +11,7 @@ Supported Android devices include smartphones, televisions, set-top boxes, etc.,
 <h2>2.Features</h2>
 
 - Alternative to Android Webview for running HTML5 games, but with performance 2~3 times higher than webview
+- The runtime library file size is less than 12M bytes
 - Mainly developed in C++
 - Use OpenGLES, OpenSLES and Android V8
 - Compatible with HTML5 specification
