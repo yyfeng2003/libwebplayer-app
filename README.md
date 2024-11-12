@@ -75,6 +75,5 @@ Supported Android devices include smartphones, televisions, games console, video
 - The libwebplayer has been applied in 100+ HTML5 games.
 - The HTML5 game codes in the demo project are sourced from the internet and should not be used for commercial purposes.
 - Reference projects: ejecta
-- Please email to yyfeng2003@foxmail.com if you are interested in it and need any help.
   
 
