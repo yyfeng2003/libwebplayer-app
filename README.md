@@ -1,3 +1,8 @@
+<h2>README.md</h2>
+
+- <a href="README.md">English</a>
+- <a href="readme/README.zh-CN.md">简体中文</a>
+
 <h2>1.Overview</h2>
 
 The libwebplayer is a light-weight and high-performance runtime library for running HTML5 game on Android device. 
