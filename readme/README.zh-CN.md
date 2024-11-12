@@ -5,7 +5,7 @@
 
 <h2>1.概述</h2>
 
-libwebplayer是一个轻量级、高性能的运行时库，用于在Android设备上运行HTML5游戏。支持的Android设备包括智能手机、电视、机顶盒等，支持的Android系统包括Android 4.4+
+libwebplayer是一个轻量级、高性能的运行时库，用于在Android设备上运行HTML5游戏。支持的Android设备包括智能手机、电视机、游戏机和机顶盒等。
 
 <h2>2.特性</h2>
 
