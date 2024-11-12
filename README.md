@@ -1,24 +1,27 @@
-1.Overview
-- The libwebplayer is a light-weight and high-performance runtime library for running HTML5 game on Android device. 
+<h2>1.Overview</h2>
+
+The libwebplayer is a light-weight and high-performance runtime library for running HTML5 game on Android device. 
 Supported Android devices include smartphones, televisions, set-top boxes, etc., and supported Android systems include Android 4.4 to the latest version.
 
-2.Features
+<h2>2.Features</h2>
+
 - Alternative to Android Webview for running HTML5 games, but with performance 2~3 times higher than webview
 - Mainly developed in C++
 - Use OpenGLES, OpenSLES and Android V8
 - Compatible with HTML5 specification
+- Support ES6 javascript specification
 - Support Android 4.4+
 - Support armeabi-v7a and arm64-v8a
-- Support HTML5 games based on CANVAS and WebGL
-- Support websocket
 - Support interactive operation with touch, keyboard and joystick
 - Support interactive code between javascript and native java
-- Support game assets encryption for release
-- Support .jpg/.png/.mp3/.ttf media types
+- Support websocket
+- Support .html/.js/.json/.jpg/.png/.mp3/.ttf media types
+- Support running HTML5 games based on HTML5 CANVAS and WebGL
 - Support running HTML5 games build by Construct2/3, Phaser(PIXI), CreateJS, CocosCreator, Egret
+- Support game assets encryption for release
 - Not support WebAudio yet
 
-3.Usage
+<h2>3.Usage</h2>
 - Put the libwebplayer-release.aar file in libs directory of your android game project
   
 - Put the dependencies code into your module build.gradle file:
@@ -42,7 +45,7 @@ Supported Android devices include smartphones, televisions, set-top boxes, etc.,
   }
   ```
   
-- Adapt to WebPlayer in the index.html
+- Adapt to WebPlayer in your game index.html
   ```
    <body>
     ...
@@ -58,7 +61,8 @@ Supported Android devices include smartphones, televisions, set-top boxes, etc.,
   </body>
   ```
   
-4. Additional
+<h2>4. Additional</h2> 
+
 - Due to the weblayer library still being optimized and upgraded, the source code is not yet fully open.
 - You can try Demo-Games-release.apk under Demo-Games\build\outputs\apk\release directory. There are four demo HTML5 games in it.
 - The libwebplayer has been applied in 100+ HTML5 games.
